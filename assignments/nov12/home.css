@@ -7,3 +7,12 @@ h1{
 #hid{
     color: blue;
 }
+div{
+    color: red;
+}
+.divclass{
+    color: blueviolet;
+}
+#divid{
+    color: darkred;
+}
