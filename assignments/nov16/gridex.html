@@ -21,33 +21,30 @@
         padding: 10px;
     }
 
-    /* Example 1: Basic 2x2 Grid */
     .grid-example-1 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3,30%);
         grid-template-rows: repeat(2, 100px);
     }
 
-    /* Example 2: 3x2 Grid with Uneven Rows */
     .grid-example-2 {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 0.7fr);
         grid-template-rows: 150px 100px;
     }
 
-    /* Example 3: Complex Layout with Grid Areas */
+
     .grid-example-3 {
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 100px 200px;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 100px 300px;
         grid-template-areas:
             "header header header"
             "sidebar content content";
     }
 
     .item {
-        background-color: #4CAF50;
+        background-color: #874caf;
         color: #fff;
         display: flex;
-        justify-content: center;
-        align-items: center;
+
         font-size: 1.2em;
         border-radius: 5px;
     }
@@ -67,10 +64,7 @@
 </head>
 <body>
 
-<h1>Grid Layout Examples</h1>
 
-<!-- Example 1: Basic 2x2 Grid -->
-<h2>Example 1: Basic 2x2 Grid</h2>
 <div class="grid-container grid-example-1">
     <div class="item">1</div>
     <div class="item">2</div>
@@ -78,8 +72,7 @@
     <div class="item">4</div>
 </div>
 
-<!-- Example 2: 3x2 Grid with Uneven Rows -->
-<h2>Example 2: 3x2 Grid with Uneven Rows</h2>
+
 <div class="grid-container grid-example-2">
     <div class="item">1</div>
     <div class="item">2</div>
@@ -89,8 +82,7 @@
     <div class="item">6</div>
 </div>
 
-<!-- Example 3: Complex Layout with Grid Areas -->
-<h2>Example 3: Complex Layout with Grid Areas</h2>
+
 <div class="grid-container grid-example-3">
     <div class="item header">Header</div>
     <div class="item sidebar">Sidebar</div>
