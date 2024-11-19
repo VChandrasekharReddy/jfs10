@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            height: 10vh;
+            width: 20vh;
+            margin: 1vh;
+            font-size: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        .forborder{
+            border: 2px solid orange;
+            font-size: 20px;
+        }
+        .forborderradius{
+            border: 2px solid orange;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        .shadow1{
+            border: 2px solid rgb(227, 219, 204);
+            border-radius: 10px;
+            font-size: 20px;
+            box-shadow: 0px 0px 9px 2px  rgba(0, 0, 0, 0.545);
+        }
+        .shadow2{
+            border: 2px solid rgb(227, 219, 204);
+            border-radius: 10px;
+            font-size: 20px;
+
+            box-shadow: -5px -2px 4px 1px rgb(234, 196, 138);
+        }
+        .inset1{
+            border: 2px solid rgb(227, 219, 204);
+            border-radius: 10px;
+            font-size: 20px;
+            box-shadow: inset 2px 2px 8px 1px  brown;
+        }
+        .inset2{
+            border: 2px solid rgb(227, 219, 204);
+            border-radius: 10px;
+            font-size: 20px;
+            box-shadow: inset -2px -4px 8px 1px  rgba(63, 42, 165, 0.367);
+        }
+        .linear{
+            border-radius: 10px;
+            background: linear-gradient(to right , orange,white,green);
+
+        }
+        .radial{
+            border-radius: 10px;
+            background: radial-gradient(circle ,orange, white,green);
+        }
+        .conic{
+            border-radius: 10px;
+            background: conic-gradient(rgb(0, 123, 255),rgb(108, 224, 133));
+        }
+        .t1{
+            border-radius: 5px;
+            border: 1px solid gray;
+            transition: all 1s ease-in;
+        }
+        .t1:hover{
+            background-color: aqua;
+            border-radius: 20px;
+            box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, 0.321);
+        }
+        .t2{
+            border-radius: 5px;
+            border: 1px solid gray;
+            transition: all 1s ease-in-out;
+        }
+        .t2:hover{
+            border: 2px solid green;
+            box-shadow: inset 2px 2px 8px 1px  brown;
+            width: 40vh;
+            height: 20vh;
+            margin: 10vh;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>dorders</h1>
+    <button class="forborder">border btn</button>
+    <button class="forborderradius">border radius btn</button>
+    <h1>shadows</h1>
+    <button class="shadow1">shadow btn</button>
+    <button class="shadow2">shadow btn</button>
+    <h1>inset shadow</h1>
+    <button class="inset1"> inset1 shadow</button>
+    <button class="inset2"> inset2 shadow</button>
+    <h1>gradients</h1>
+    <button class="linear">linear-gradient</button>
+    <button class="radial">radial-gradient</button>
+    <button class="conic">radial-gradient</button>
+    <h1>transistions</h1>
+    <button class="t1">transistion 1 </button>
+    <button class="t2">transistion 2 </button>
+</body>
+</html>

@@ -104,6 +104,103 @@
                 </ol>
                 <hr>
         </div>
+        <!-- Responsive YouTube Video Embed -->
+    <div class="video-container">
+        <iframe
+            src="https://youtu.be/Ntn1-SocNiY?si=IHRtuAIUnMYlEEAG"
+            title="YouTube video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <!-- FAQ Section -->
+<h2>Frequently Asked Questions</h2>
+
+<details>
+    <summary>What is this website about?</summary>
+    <p>This website is designed to provide users with useful tools and resources for daily tasks, including a diary feature and an exam platform with monitoring capabilities.</p>
+</details>
+
+<details>
+    <summary>How do I use the diary feature?</summary>
+    <p>You can access the diary feature by navigating to the "Diary" section. Simply enter your text in the input field, and it will be saved for future reference.</p>
+</details>
+
+<details>
+    <summary>Can I monitor user activity during an exam?</summary>
+    <p>Yes, the exam platform includes a monitoring feature that tracks user activity, including tab changes, to ensure a fair testing environment.</p>
+</details>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+
+    <h2>User Information Form</h2>
+    <form action="/submit" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
+<body>
+
+    <h2>Select Programming Languages</h2>
+    <form action="/submit-languages" method="post">
+        <label>
+            <input type="checkbox" name="languages" value="JavaScript">
+            JavaScript
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="languages" value="Python">
+            Python
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="languages" value="Java">
+            Java
+        </label><br>
+
+        <label>
+            <input type="checkbox" name="languages" value="C++">
+            C++
+        </label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <form id="">
+        <h3>Rate your experience:</h3>
+        <div class="rating">
+          <label>
+            <input type="radio" name="rating" value="1" required> ★
+          </label>
+          <label>
+            <input type="radio" name="rating" value="2"> ★★
+          </label>
+          <label>
+            <input type="radio" name="rating" value="3"> ★★★
+          </label>
+          <label>
+            <input type="radio" name="rating" value="4"> ★★★★
+          </label>
+          <label>
+            <input type="radio" name="rating" value="5"> ★★★★★
+          </label>
+        </div>
+        <button type="submit">Submit Feedback</button>
+      </form>
+    
     
 </body>
 </html>

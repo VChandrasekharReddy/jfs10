@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clear Value After 2 Seconds</title>
+</head>
+<body>
+    <input type="text" id="myInput" placeholder="Type something">
+    <button onclick="clearValue()">Submit</button>
+
+    <script>
+        function clearValue() {
+            const input = document.getElementById('myInput');
+            console.log("Value before clearing:", input.value);
+
+            // Set a timer to clear the value after 2 seconds
+            setTimeout(() => {
+                input.value = '';
+                console.log("Value cleared!");
+            }, 2000); // 2000 milliseconds = 2 seconds
+        }
+    </script>
+</body>
+</html>
