@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Clear Value After 2 Seconds</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            padding: 100px;
+        }
+    </style>
 </head>
 <body>
-    <input type="text" id="myInput" placeholder="Type something">
-    <button onclick="clearValue()">Submit</button>
+    <div onclick="makenone()"></div>
 
     <script>
-        function clearValue() {
-            const input = document.getElementById('myInput');
-            console.log("Value before clearing:", input.value);
-
-            // Set a timer to clear the value after 2 seconds
-            setTimeout(() => {
-                input.value = '';
-                console.log("Value cleared!");
-            }, 2000); // 2000 milliseconds = 2 seconds
+        function makenone(){
+            var div = document.querySelector('div');
+            div.style.display='none';
         }
     </script>
 </body>

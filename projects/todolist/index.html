@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/projects/todolist/index.css">
+</head>
+<body>
+
+    <div class="tesks">
+        <h1> add the tasks</h1>
+        <input id="input" type="text" name="" placeholder="enter the task">
+        <button id="button">save</button>
+    </div>
+    <ul id="todolistitems"></ul>
+    <script>
+        let input = document.getElementById('input');
+        let button = document.getElementById('button');
+        let ullist = document.getElementById('todolistitems');
+        let listidarray=[]
+        let btnarray=[]
+        let idcount=1;
+        button.addEventListener('click',function(){
+            if(input.value.trim()!==''){
+                let li = document.createElement('li');
+                li.textContent = input.value.trim();
+                li.id="list"+idcount;
+                console.log("list"+idcount)
+                listidarray.push("list"+idcount);
+                let btn = document.createElement('button');
+                btn.textContent='Delete';
+                btn.id="btn"+idcount;
+                btnarray.push("btn"+idcount);
+                li.appendChild(btn);
+                ullist.appendChild(li);
+                input.value='';
+                btn.addEventListener('click', function(){
+                    ullist.removeChild(li);
+                })
+                idcount++;
+            }
+        });
+    </script>
+</body>
+</html>
